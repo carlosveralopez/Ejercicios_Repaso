@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+    const MESES = [
+  "Enero",
+  "Febrero",
+  "Marzo",
+  "Abril",
+  "Mayo",
+  "Junio",
+  "Julio",
+  "Agosto",
+  "Septiembre",
+  "Octubre",
+  "Noviembre",
+  "Diciembre",
+];
+
+const Dia = [
+  "Lunes",
+  "Martes",
+  "Miercoles",
+  "Jueves",
+  "Viernes",
+  "Sabado",
+  "Domingo",
+];
+
+
+    var f= new Date();
+document.getElementById("demo").innerHTML = 
+f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear();
+
+document.getElementById("demo2").innerHTML = 
+Dia[f.getDay()] + ", " + MESES[f.getMonth()] + " " + f.getDate() + ", " + f.getFullYear();
+</script>
+
+</body>
+</html>

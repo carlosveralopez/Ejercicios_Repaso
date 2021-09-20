@@ -1,0 +1,26 @@
+<form action="#saludo">
+
+<label>Fecha de nacimiento:</label><input type="text" id="fecha_nacimiento"><br><br>
+  	<input type="submit"  value="enviar" name="enviar" onclick="enviarSaludo()">
+</form>
+<p id="saludo"></p>
+<script>
+function enviarSaludo(){
+            var saludo= document.querySelector('#saludo');
+            var edad= document.getElementById('fecha_nacimiento');
+            if(edad.value<12){
+                var texto = "Eres un niño";
+            }else{ if(edad.value>12 & edad.value<26){
+                var texto = "Eres joven";
+            }else{ if(edad.value>26 & edad.value <60){
+                var texto = "Eres adulto";
+            }else{ if(edad.value>60){
+                var texto = "Eres jubilado";
+            }
+        }}}
+            
+
+           saludo.innerHTML= texto;
+        }
+
+</script>

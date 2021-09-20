@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<meta charset=utf-8>
+<html>
+<head><title>Concurso HTML</title></head>
+<body>
+<h1>Ejercicio 2</h1>
+<input type="button" value="quitar primero" name="quitar primero" onclick="quitar(0)">
+<input type="button" value="quitar ultimo" name="quitar ultimo" onclick="quitar(1)">
+<input type="button" value="añadir" name="añadir" onclick="añadir()">
+<br>
+
+ <ul><li class="name1">Carlos</li type="text"  id="name" size="20"></ul>
+    <ul> <li class="name2">antonio</li type="text"  id="name2" size="20"></ul>
+        <ul> <li class="name3"> fernando:</li type="text"  id="name3" size="20"></ul>
+            <ul> <li class="name4">fernando:</li type="text"  id="name3" size="20"></ul>
+                <ul> <li class="name5">fernando:</li type="text"  id="name3" size="20"></ul>
+                    <ul><li class="name6">miguel</li type="text"  id="name4" size="20"></ul>
+                        <ul><li class="name7">juan</li type="text"  id="name6" size="20"> </ul>
+     
+     
+                            
+        </body>        
+    	
+
+        <script>
+            var num=1;
+            var num2=7;
+            var pos;
+            function añadir(){
+                const li = document.createElement("li");
+                const ul = document.createElement("ul");
+                li.textContent = "nueva linea";
+                ul.appendChild(li);
+
+                document.body.appendChild(ul);
+            
+            }
+            function quitar(pos){
+                if(pos==0){
+                const li = document.querySelector(".name"+num);
+
+                li.remove();
+                num++;}
+            else if(pos==1){
+                const li = document.querySelector(".name"+num2);
+
+                li.remove();
+                num2= num2-1;
+            }
+            }
+        </script>
+    
+
+</html>

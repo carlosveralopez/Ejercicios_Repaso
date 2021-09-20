@@ -1,0 +1,27 @@
+
+  
+    <form action="#sal">
+    <label>Nombre:</label><input type="text" id="nombre"><br><br>
+          <input type="button"  value="enviar" name="enviar" onclick="funcion()">
+    </form>
+    <p id="sal"></p>
+    <script>
+        function funcion(){
+            var texto="Te has equivocado"
+            var salu= document.querySelector('#sal');
+            var nombre= document.getElementById('nombre');
+            if(nombre.value!="suarez"){
+                salu.innerHTML= texto ;
+            }else{
+                
+    location.href="https://github.com"
+  }
+            }
+
+            
+
+        
+
+
+
+    </script>

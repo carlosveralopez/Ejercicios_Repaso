@@ -1,0 +1,20 @@
+<script>
+    function suma(){
+        var param1 = document.getElementById(n1.value);
+    var param2 = document.getElementById(n2.value);
+    if(param1<0){
+        param1=-param1;
+    }
+    if(param2<0){
+        param2=-param2;
+    }
+    document.write(param1+param2);
+    }
+    
+</script>
+
+<html>
+<label text="numero 1"></label><input id="n1" placeholder="escribe"> 
+<label text="numero 2"></label><input id="n2" placeholder="escribe"> 
+<input type=button value=enviar action="suma()">
+</html>
